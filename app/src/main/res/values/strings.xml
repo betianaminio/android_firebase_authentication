@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Firebase Authentication</string>
+    <string name="facebook_app_id">YOUR FACEBOOK APP ID</string>
+
+    <string name="profile_tx_user_name">user name</string>
+    <string name="profile_tx_user_email">email</string>
+    <string name="profile_tx_provider">provider</string>
+    <string name="profile_btn_sign_out">sign out</string>
+</resources>
