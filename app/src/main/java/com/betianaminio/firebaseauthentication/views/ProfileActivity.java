@@ -62,4 +62,14 @@ public class ProfileActivity extends Activity {
         super.onDestroy();
 
     }
+	
+	    private void signOut(){
+
+        AuthenticationManager.getInstance().signOut();
+
+        startActivity(new Intent( ProfileActivity.this, LoginActivity.class));
+
+
+        super.onBackPressed();
+    }
 }
