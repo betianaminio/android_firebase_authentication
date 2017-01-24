@@ -38,10 +38,7 @@ public class ProfileActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                AuthenticationManager.getInstance().signOut();
-
-                startActivity(new Intent( ProfileActivity.this, LoginActivity.class));
-                ProfileActivity.this.finish();
+					signOut();
             }
         });
 
@@ -63,13 +60,17 @@ public class ProfileActivity extends Activity {
 
     }
 	
-	    private void signOut(){
+	@Override
+    public void onBackPressed(){
+
+        signOut();
+    }
+	
+	private void signOut(){
 
         AuthenticationManager.getInstance().signOut();
 
         startActivity(new Intent( ProfileActivity.this, LoginActivity.class));
-
-
-        super.onBackPressed();
+		ProfileActivity.this.finish();
     }
 }
