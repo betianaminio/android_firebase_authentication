@@ -35,7 +35,7 @@ public class FacebookProvider extends SocialProvider {
         this.mLoginButton = (LoginButton)view;
         this.mLoginButton.setReadPermissions("email");
 
-        this.mProviderType = ProvidersConfiguration.eProvidersType.TYPE_FACEBOOK;
+        this.mProviderType = ProvidersConfiguration.PROVIDER_TYPE_FACEBOOK;
 
         this.mLoginManager = LoginManager.getInstance();
 

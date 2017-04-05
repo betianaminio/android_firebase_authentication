@@ -9,7 +9,7 @@ import com.betianaminio.firebase_authentication.providers.ProvidersConfiguration
 public abstract class SocialProvider {
 
     protected Activity mActivity;
-    protected ProvidersConfiguration.eProvidersType mProviderType;
+    protected String  mProviderType;
 
     public abstract void initialize( Activity activity, View view);
     protected abstract void login();
@@ -19,7 +19,7 @@ public abstract class SocialProvider {
     public abstract boolean isLogged();
 
 
-    public ProvidersConfiguration.eProvidersType getProviderType(){
+    public String getProviderType(){
         return this.mProviderType;
     };
 }

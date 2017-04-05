@@ -26,8 +26,8 @@ import static com.twitter.sdk.android.Twitter.getSessionManager;
 
 public class TwitterProvider extends SocialProvider {
 
-    private final String TWITTER_ACCESS_TOKEN        = "804725339259830276-Q6vjphv9p9yumKMGghUT4oCoWm1194r";
-    private final String TWITTER_ACCESS_TOKEN_SECRET = "Jt5LMEH4m0lzZGsSstGnql87uvzoEkQSXIs4YjJCfQmHs";
+    private final String TWITTER_ACCESS_TOKEN        = "";
+    private final String TWITTER_ACCESS_TOKEN_SECRET = "";
 
     private TwitterLoginButton mLoginButton;
 
@@ -36,7 +36,7 @@ public class TwitterProvider extends SocialProvider {
 
         this.mLoginButton = (TwitterLoginButton)view;
         this.mActivity    = activity;
-        this.mProviderType = ProvidersConfiguration.eProvidersType.TYPE_TWITTER;
+        this.mProviderType = ProvidersConfiguration.PROVIDER_TYPE_TWITTER;
 
         login();
     }

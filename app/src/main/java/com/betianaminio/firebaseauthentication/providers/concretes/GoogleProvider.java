@@ -31,7 +31,7 @@ public class GoogleProvider extends SocialProvider {
     public void initialize(Activity activity, View view) {
 
         this.mActivity = activity;
-        this.mProviderType = ProvidersConfiguration.eProvidersType.TYPE_GOOGLE;
+        this.mProviderType = ProvidersConfiguration.PROVIDER_TYPE_GOOGLE;
 
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(YOUR_DEFAULT_WEB_CLIENT_ID)
